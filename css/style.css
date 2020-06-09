@@ -1,0 +1,324 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	color: #212529;
+}
+.bg-yellow {
+	background: #fed136
+}
+
+/* Tipografia
+---------------*/
+.text-yellow {
+	color: #fed136
+}
+h1, h2 , h3, h4, .navbar, .btn-yellow, .form-control {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+h2 {font-size: 2.3em}
+h3 {font-size: 1.6em}
+p {color: #6c757d}
+.p-serif {
+	font-family: 'Inria Serif', serif;
+}
+a {
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s
+}
+.navbar {
+	font-weight: 400
+}
+.navbar-toggler {
+	color: white !important;
+	font-size: 14px
+}
+@media (max-width: 992px) {
+	h2 {
+		font-size: 2em
+	}
+}
+
+/* Botões
+-----------*/
+.btn-yellow {
+  color: #ffffff;
+  background-color: #fed136;
+  border-color: #fed136;
+  text-transform: uppercase;
+  padding: 23px 40px
+}
+.btn-yellow:hover {
+  color: #ffffff;
+  background-color: #fec605;
+  border-color: #fec605;
+}
+.btn-yellow:focus {
+  color: #ffffff;
+  background-color: #fec605;
+  border-color: #fec605;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254,209,54, .5);
+          box-shadow: 0 0 0 0.2rem rgba(254,209,54, .5)
+}
+
+/* Cabeçalho
+--------------*/
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	margin-left: 20px;
+	letter-spacing: 1px
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #fed136;
+}
+.navbar, .logo {
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s
+}
+header {
+	height: 800px;
+	background: url(../img/header-bg.jpg) no-repeat top -50px left;
+	background-size: cover;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+header .display-3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+header h2 {
+	font-family: 'Inria Serif', serif;
+	margin-bottom: 20px
+}
+@media (min-width: 992px) {
+	.navbar-scroll {
+		padding: 15px 0 !important;
+		background: #212529
+	}
+	.logo-scroll {
+		width: 150px;
+	}
+}
+@media (max-width: 992px) {
+	header {
+		height: auto;
+		background-position: top 0 center;
+		padding: 100px 30px
+	}
+	header h1 {
+		font-size: 3em !important
+	}
+	header h2 {
+		font-size: 1.8em !important
+	}
+	.logo {
+		width: 150px
+	}
+	.navbar {
+		background: #212529
+	}
+	.navbar-dark .navbar-nav .nav-link {
+		margin-left: 0
+	}
+}
+
+/* Serviços
+--------------*/
+.ser-icon {
+	width: 120px;
+	height: 120px;
+	color: white;
+	border-radius: 50%;
+	margin: 20px auto 30px auto
+}
+
+/* Portfólio
+-------------*/
+#portfolio {
+	background: #f8f9fa
+}
+.portfolio-item {
+	background: white;
+	margin-bottom: 30px
+}
+
+.portfolio-thumb {
+	position: relative;
+}
+.portfolio-thumb div {
+	color: white;
+	background: rgba(254, 209, 54, .9);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: opacity .4s;
+	-o-transition: opacity .4s;
+	transition: opacity .4s
+}
+.portfolio-thumb:hover div {
+	opacity: 1;
+}
+.portfolio-thumb img {
+	width: 100% !important
+}
+.modal-lg {
+	width: 100%;
+	max-width: 1140px;
+	text-align: center;
+}
+.modal-close {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.modal-close:hover {
+	opacity: .4
+}
+.modal h2 {
+	font-size: 2.7em;
+	text-transform: uppercase;
+}
+.modal p {
+	max-width: 800px;
+	margin: 15px auto
+}
+.modal img {
+	width: 100%;
+	max-width: 800px
+}
+
+/* Sobre
+-----------*/
+.img-sobre {
+	border: 7px solid #e9ecef;
+	width: 100%;
+	border-radius: 50%;
+}
+div.img-sobre {
+	display: inline-block;
+	color: white;
+	padding: 8px;
+	width: 160px;
+	height: 160px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.img-sobre h4 {
+	font-size: 1.1em;
+	margin: auto;
+	line-height: 1.4
+}
+.linha {
+	width: 2px;
+	background: #e9ecef;
+	height: 230px;
+	display: inline-block;
+	margin-bottom: -10px
+}
+@media (max-width: 992px) {
+	#sobre .col-9 {
+		text-align: left;
+		-webkit-box-ordinal-group: 4;
+		    -ms-flex-order: 3;
+		        order: 3
+	}
+	#sobre .col-3 {
+		margin-left: 0 !important;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2
+	}
+	div.img-sobre {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+	}
+	div.img-sobre h4 {
+		font-size: .6em;
+		padding: 3px
+	}
+}
+
+/* Equipe
+-----------*/
+#equipe {
+	background: #f8f9fa
+}
+.p-equipe {
+	max-width: 700px;
+	margin: 30px auto 0 auto
+}
+#equipe .col-12 {
+	margin-bottom: 15px;
+	margin-top: 15px
+}
+.img-equipe {
+	border: 7px solid #e9ecef;
+	width: 220px;
+	border-radius: 50%;
+}
+.btn-social {
+	width: 40px;
+	height: 40px;
+	margin: 0 3px;
+	padding: 0;
+	line-height: 40px
+}
+
+/* Contate 
+------------*/
+#contato {
+	background: #212529 url(../img/map-image.png) no-repeat center;
+	background-size: cover;
+	color: white;
+}
+.form-group {
+	margin: 20px 0;
+}
+.form-control {
+	font-size: 16px;
+	padding: 30px 15px;
+}
+textarea.form-control {
+	padding: 15px;
+	height: 100%
+}
+::-webkit-input-placeholder {
+   color: #b5b5b5 !important
+}
+:-moz-placeholder {
+   color: #b5b5b5 !important  
+}
+::-moz-placeholder {
+   color: #b5b5b5 !important
+}
+:-ms-input-placeholder {  
+   color: #b5b5b5 !important
+}
+.invalid-feedback {
+	text-align: left;
+}
+
+/* Rodapé
+----------*/
+footer {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px
+}
+footer a:hover {
+	color: black
+}
