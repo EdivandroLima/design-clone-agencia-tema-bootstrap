@@ -1,4 +1,4 @@
-// Nabbar
+// Navbar
 $(window).scroll(function(){
     if ($(".navbar").offset().top > 100){
         $(".navbar").addClass("navbar-scroll");
